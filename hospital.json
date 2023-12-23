@@ -1,0 +1,136 @@
+{
+    "hospital_name": "БОЛЬница №1",
+    "address": "пр. Космонавтов, 34",
+    "patients": [
+        {
+            "id": 1,
+            "name": "Абдул Чичиков",
+            "age": 34,
+            "contacts": {
+                "email": "Abdul@example.com",
+                "phone": "+1234567890"
+            },
+            "hospital_room_id": 1
+        },
+        {
+            "id": 2,
+            "name": "Яблоко Рум",
+            "age": 19,
+            "contacts": {
+                "email": "apple@example.com",
+                "phone": "+0987654321"
+            },
+            "hospital_room_id": 2
+        },
+        {
+            "id": 3,
+            "name": "Арсений Дота2",
+            "age": 48,
+            "contacts": {
+                "email": "ArsDOTA2@example.com",
+                "phone": "+5678901234"
+            },
+            "hospital_room_id": 3
+        },
+        {
+            "id": 4,
+            "name": "лох лохович",
+            "age": 16,
+            "contacts": {
+                "email": "loooh@gmail.com",
+                "phone": "130322331343"
+            },
+            "hospital_room_id": 1
+        }
+    ],
+    "hospital_rooms": [
+        {
+            "id": 1,
+            "name": "111",
+            "departament_id": [
+                1
+            ]
+        },
+        {
+            "id": 2,
+            "name": "222",
+            "departament_id": [
+                2
+            ]
+        },
+        {
+            "id": 3,
+            "name": "333",
+            "departament_id": [
+                3
+            ]
+        },
+        {
+            "id": 4,
+            "name": "145",
+            "departament_id": 3
+        },
+        {
+            "id": 5,
+            "name": "1432",
+            "departament_id": 3
+        }
+    ],
+    "doctors": [
+        {
+            "id": 1,
+            "name": "Врач",
+            "contacts": {
+                "email": "JoJo@example.com",
+                "phone": "+88005553535"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Джонатан Джостар",
+            "contacts": {
+                "email": "JoJo@example.com",
+                "phone": "+88005553535"
+            }
+        },
+        {
+            "id": 3,
+            "name": "Баталфилд Овервотч",
+            "contacts": {
+                "email": "BatOver@example.com",
+                "phone": "+3344556677"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Баталфилд Овервотч",
+            "contacts": {
+                "email": "BatOver@example.com",
+                "phone": "+3344556677"
+            }
+        }
+    ],
+    "departaments": [
+        {
+            "id": 1,
+            "name": "Хирургическое отделение",
+            "doctor_id": [
+                1
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Неврологическое отделение",
+            "doctor_id": [
+                2
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Терапевтическое отделение",
+            "doctor_id": [
+                3
+            ]
+        }
+    ]
+}
