@@ -41,7 +41,7 @@ def delete_patient_by_id(id):
     return {"message": f"Пациент с идентификатором {id} не найден"}
 
 
-def create_one(patient):
+def create_one_p(patient):
     db = json_service.get_database()
 
     last_patient_id = get_all()[-1]["id"]

@@ -33,7 +33,7 @@ def delete_one_by_id(id):
 
     return {"message": f"Элемент с {id} не найден"}
 
-def update_one_by_id(doctor_id, updates):
+def update_doc_one_by_id(doctor_id, updates):
     db = json_service.get_database()
 
     for i, elem in enumerate(db["doctors"]):

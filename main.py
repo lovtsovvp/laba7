@@ -87,7 +87,7 @@ def main_menu():
       },
       "hospital_room_id": hospital_room_id
      }
-     create_one(patient_data)
+     create_one_p(patient_data)
     elif choice == '4':
      while True:
       try:
@@ -229,7 +229,7 @@ def main_menu():
       "doctor_id": doctor_id
      }
 
-     create_one(departament)
+     create_departament(departament)
     elif choice == '4':
      while True:
       try:
@@ -335,7 +335,7 @@ def main_menu():
      print("Выберите, что вы хотите обновить (1 - имя, 2 - номер телефона, 3 - почту): ")
      update_choice = input("Введите номер действия: ")
      if update_choice == '1':
-      updates['name'] = input("Введите новое имя палаты: ")
+      updates['name'] = input("Введите новое имя врача: ")
      if update_choice == '2':
       while True:
        try:
@@ -351,7 +351,11 @@ def main_menu():
         break
        else:
         print("Ошибка: Некорректный формат почты.")
-
+     updated_doctor = update_doc_one_by_id(hospital_room_id, updates)
+     if "message" in updated_doctor:
+      print(updated_room["message"])
+     else:
+      print("Обновление прошло успешно.")
     elif choice == "6":
      print("Работа с врачами завершена.")
      break

@@ -22,7 +22,7 @@ def create_one(departament):
 
     json_service.set_database(db)
 
-def delete_one_by_id(id):
+def delete_d_one_by_id(id):
     db = json_service.get_database()
 
     for i, elem in enumerate(db["departaments"]):
